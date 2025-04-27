@@ -38,14 +38,12 @@
    git clone https://github.com/PalGalya/final-web-project-grid-template
 
 2. Відкрийте файл index.html у вашому браузері:
-cd grid-template
+  cd final-web-project-grid-template
 open index.html   # для macOS
-# або
-start index.html  # для Windowsgrid-template/
-
+  # або
+start index.html  # для Windows
 
 📁 Структура проєкту
-
 grid-template/
 ├── assets/
 │   ├── css/
@@ -74,4 +72,5 @@ grid-template/
 Десктопи: > 992px
 
 👨‍💻 Автор
-Ваше Ім'я - Веб-розробник - ВашПрофіль (добавить імя гідхаб)
+Halyna Palamarchuk - Веб-розробник - PalGalya
+
