@@ -18,14 +18,17 @@
     position: relative; // для того щоб зявилась лінія під логотипом
 
     display: flex;
-    display: flex;
+    flex-wrap: wrap; // дозволяємо перенос іконок
     justify-content: center;
 
     margin-bottom: $gap-x3; // для того щоб воно не зливалось з логотипом
 
     font-size: 2.25rem;
 
+    padding: 0 $gap;  // Додаємо відступ для кращого вигляду при переносі
+
     gap: $gap-lg;
+    gap: $gap;
 
     &::after {
       position: absolute;
@@ -45,9 +48,14 @@
   }
 
   &__social-item {
-    margin: 0 10px; // зробити відступ між іконками
+    // margin: 0 10px; // - видаляємо, бо використовуємо gap
+    padding: 5px; // Додаємо padding для більшої площі натискання
 
     transition: color 0.3s ease;
+
+    @include sm {
+      font-size: 1.875rem; // зменшуємо розмір іконок на малих екранах
+    }
 
     &:hover {
       color: $color-accent;
@@ -72,10 +80,6 @@
 
     &-last {
       display: block;
-
-      letter-spacing: 0.05em;
-
-      color: $color-white;
 
       font-weight: 700;
     }
